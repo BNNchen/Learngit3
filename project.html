@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* 
+            header的格式，可以考虑使用图片
+        */
+        .headercontent{
+            font-size: 25px;
+            font-family:YOUYUAN;
+            font-weight: 900;
+            height:60px;
+            background-color: yellow;
+            text-align:center;
+            line-height: 60px;
+        }
+        /* 
+            长条图片
+        */
+         .ImgSet{
+            width: 70%;
+            height: 260px;
+        } 
+
+        #box1{
+            margin-top:20px;
+            font-size: 80px;
+            font-family: YOUYUAN;
+            width:80%;
+            height:500px;
+            border:pink 5px solid;
+            text-indent:2em
+        }
+        .ButtonSet{
+            margin-top: 20px;
+            width:90px;
+            height:30px;
+            font-size: 22px; 
+            font-family:'Times New Roman', Times, serif; 
+            font-weight: 900;
+            
+        }
+        .box2{
+            width: 70%;
+            height:40px;
+            border:#bfa solid 8px;
+            margin:3% 10% 0% 7%;
+        }
+        .box3{
+            width: 30%;
+            height: 40px;
+            background-color: red;
+            color:whit;
+            font-size:200%;
+            text-align: center;
+
+            transform: translateX(235%);
+        }
+    </style>
+    <script>
+        
+    </script>
+</head>
+<body>
+    <header >
+        <div class="headercontent">
+            这是一个简单的抽奖系统
+        </div>
+    </header>
+    <main>
+        <div align="center" >
+            <img src="./picture/test1.jpg" class="ImgSet" alt="">
+        </div>
+        <div style="margin-top: 50px;margin-left: 90px; font-size: 30px;"> 
+            <p class="word">
+                <em class="spac1">&nbsp&nbsp&nbsp&nbsp&nbsp想写给自己的话</em>
+                
+            </p>
+            <p class="word1">
+                <em class="space2">&nbsp&nbsp&nbsp&nbsp&nbsp safasf</em>
+            </p>
+            <textarea name="Input" id="box1" cols="50" rows="30"></textarea>
+            <input type="button" class="ButtonSet" value="submit" name="bt" onclick="alert('提交成功');" >  
+        </div>
+          <!-- 
+             抽奖环节，希望点击submit之后出现抽奖的滚动菜单   
+          -->
+        <div class="lottery" style="margin-top:30px">
+          
+            <p>
+                <em style="font-size: 30px; ">
+                    &nbsp&nbsp&nbsp&nbsp&nbsp提交成功开始抽奖
+                </em>
+            </p>
+            <div class="box2">
+                <div class="box3" >
+                    祝你好运 
+                </div>
+                <input type="button" class="ButtonSet" value="点击开始抽奖" name="bt" onclick="changeText(this)" style="margin-bottom:100px;">
+    <script>
+        function changeText(id){
+        alert('恭喜你中奖，请提交个人信息及取快递的位置，奖品将在未来几天发送给你');
+        location.href="http://coacstudy.mikecrm.com/S8EOne8";
+        }
+        </script>
+            </div>
+        </div>
+    </main>
+    <main>
+
+    </main>
+</body>
+</html>
